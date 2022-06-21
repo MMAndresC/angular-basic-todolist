@@ -1,11 +1,5 @@
 
 <app-addtask (emitTask)="addNewTask($event)"></app-addtask>
 
-<section>
-    <ul>
-        <li *ngFor="let task of todoList">
-            <p>{{task}}</p>
-        </li>
-    </ul>
-</section>
-<app-showtask></app-showtask>
+
+<app-showtask [todoList]="todoList"></app-showtask>

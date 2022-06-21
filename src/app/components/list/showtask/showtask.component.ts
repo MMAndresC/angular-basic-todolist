@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-showtask',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./showtask.component.scss']
 })
 export class ShowtaskComponent implements OnInit {
-
+  @Input() public todoList!: string[];
   constructor() { }
 
   ngOnInit(): void {
